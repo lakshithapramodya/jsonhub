@@ -41,7 +41,7 @@ function App() {
       <div className="flex flex-col mx-auto mt-6 w-full sm:w-[80%] md:w-[70%] lg:w-[58%] items-center justify-center">
         <form onSubmit={handleSubmit} className="w-full space-y-4 px-5">
           {url && (
-            <div className="text-lg font text-blue-900 flex flex-col md:flex-row w-full bg-blue-100 px-6 py-4 rounded-lg">
+            <div className="text-lg font text-blue-900 flex w-full bg-blue-100 px-6 py-4 rounded-lg">
               <pre className="">Your JSON is hosted at: </pre>
               <a className="underline" href={`${SERVER_ENDPOINT}/${url}`}>
                 {`${SERVER_ENDPOINT}/${url}`}
